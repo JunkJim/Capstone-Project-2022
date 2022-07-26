@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=ZCOOL+QingKe+HuangYou&display=swap');
+
+*{
+    padding: 0;
+    color: white;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+/* navigation bar */
+body {
+     font-family: Poppins;
+     height: 100vh;
+     display: grid;
+}
+
+.logo {
+    color: white;
+}
+nav{
+    background: #00afef;
+    height: 80px;
+    width: 100%;
+}
+label.logo {
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+    text-decoration: none;
+}
+span {
+    color: blue;
+}
+nav ul {
+    float: right;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+color: white;
+font-size: 17px;
+text-transform: uppercase;
+padding: 7px 13px;
+border-radius: 3px;
+
+}
+
+a.active,a:hover {
+    background: #0000FF;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 925px ){
+
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #00afef;
+        top: 80px;
+        left: -100% ;
+        text-align: center; 
+        transition: all .5s; 
+       }
+
+        nav ul li {
+            display: block;
+            margin: 50px 0;
+            line-height: 30px;
+        }
+        nav ul li a{
+
+            font-size: 20px;
+        }
+
+        a:hover,a.active {
+            background:none ;
+            color: orange 
+        }
+        #check:checked ~ ul {
+            left: 0;
+        }
+}
+section {
+    background-size:cover ;
+    height: calc(100vh-80px);
+}
+/*Contact us */
+
+
+.contact-wrap {
+	width: 80%;
+	height: auto;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+background: white;}
+
+.contact-in {
+	padding: 40px 30px;
+    color: #00afef;
+}
+
+.contact-in:nth-child(1) {
+	flex: 30%;
+	color: #00afef;
+    background: #00afef;
+}
+
+.contact-in:nth-child(2) {
+	flex: 45%;
+	background: #00afef;
+}
+
+.contact-in:nth-child(3) {
+	flex: 25%;
+	padding: 0;
+}
+
+h3 {
+	font-size: 58px;
+	font-weight: bold;
+	text-align: center;
+	color: #000;
+}
+.contact-in h1 {
+	font-size: 25px;
+	color: white;
+	text-transform: uppercase;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+
+.contact-in h2 {
+	font-size: 25px;
+	font-weight: 400;
+	margin-bottom: 15px;
+    color: white;
+}
+
+.contact-in h2 i {
+	font-size: 19px;
+	width: 40px;
+	height: 40px;
+	margin-right: 10px;
+	background: orange;
+	color: white;
+	border-radius: 50px;
+	line-height: 40px;
+	text-align: center;
+}
+
+.contact-in p {
+	font-size: 19px;
+	font-weight: 300;
+	margin-bottom: 20px;
+    color: white
+}
+
+.contact-in ul {
+	padding: 0;
+	margin: 0;
+}
+
+.contact-in ul li {
+	list-style: none;
+	display: inline-block;
+	margin-right: 5px;
+	margin-top: 5px;
+}
+
+.contact-in ul li a {
+	display: block;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	background: #fff;
+	border-radius: 50px;
+}
+
+.contact-in ul li a i {
+	font-size: 18px;
+	line-height: 30px;
+	color: #000;
+}
+
+.contact-in form {
+	width: 100%;
+	height: auto;
+}
+
+.contact-in-input {
+	width: 100%;
+	height: 40px;
+	margin-bottom: 20px;
+	border: 1px solid #fff;
+	outline: none;
+	padding-left: 5px;
+	background: transparent;
+	color: #fff;
+	font-size: 19px;
+	font-weight: 300;
+	font-family: 'Poppins', sans-serif;
+}
+
+.contact-in-input::placeholder {
+	color: #fff;
+}
+
+.contact-in-textarea {
+	width: 100%;
+	height: 140px;
+	margin-bottom: 20px;
+	border: 1px solid #fff;
+	outline: none;
+	padding-top: 5px;
+	padding-left: 5px;
+	background: transparent;
+	color: #fff;
+	font-size: 19px;
+	font-weight: 300;
+	font-family: 'Poppins', sans-serif;
+}
+
+.contact-in-textarea::placeholder {
+	color: #fff;
+}
+
+.contact-in-btn {
+	width: 100%;
+	height: 40px;
+	border: 1px solid #fff;
+	outline: none;
+	background: transparent;
+	color: #fff;
+	font-size: 19px;
+	font-weight: 300;
+	font-family: 'Poppins', sans-serif;
+	cursor: pointer;
+}
+
+.contact-in iframe {
+	width: 100%;
+	height: 100%;
+}
+
+@media only screen and (max-width:480px) {
+	.contact-in:nth-child(1) {
+		flex: 50%;
+	}
+
+	.contact-in:nth-child(2) {
+		flex: 50%;
+	}
+
+	.contact-in:nth-child(3) {
+		flex: 100%;
+	}
+
+}
+
+@media only screen and (max-width:360px) {
+	.contact-in:nth-child(1) {
+        color: blue;
+        background: blue;
+		flex: 50%;
+	}
+
+	.contact-in:nth-child(2) {
+		flex: 50%;
+	}
+
+	.contact-in:nth-child(3) {
+		flex: 100%;
+	}
+
+
+}
+
+button {
+	color: white;
+	padding: 10px 10px;
+	align-items: center;
+	background-color: #00afef;
+	font-family: Poppins;
+	font-style: italic;
+	font-size: 20px;
+	cursor: pointer;
+
+
+}
+
+p {
+	color: black;
+	font-size: 19px;
+	align-items: center;
+	padding: 14px 14px;
+	border: 0;
+}

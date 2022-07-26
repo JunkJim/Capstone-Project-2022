@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=ZCOOL+QingKe+HuangYou&display=swap');
+
+/*storage page*/
+
+
+.logo {
+    color: white;
+    text-decoration: none;
+}
+nav{
+    background: #00afef;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo {
+    color: black;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+    text-decoration: none;
+}
+span {
+    color: blue;
+    text-decoration: none;
+    
+}
+nav ul {
+    float: right;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+color: white;
+font-size: 17px;
+text-transform: uppercase;
+padding: 7px 13px;
+border-radius: 3px;
+text-decoration: none;
+
+}
+
+a.active,a:hover {
+    background: #0000FF;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 925px ){
+
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #00afef;
+        top: 80px;
+        left: -100% ;
+        text-align: center; 
+        transition: all .5s; 
+       }
+
+        nav ul li {
+            display: block;
+            margin: 50px 0;
+            line-height: 30px;
+        }
+        nav ul li a{
+
+            font-size: 20px;
+        }
+
+        a:hover,a.active {
+            background:none ;
+            color: orange 
+        }
+        #check:checked ~ ul {
+            left: 0;
+        }
+}
+
+
+
+body {
+background: white;
+font-family: poppins;
+text-decoration: none;
+
+}
+
+.container {
+    width: 90%;
+    margin: 50px auto;
+
+}
+
+.heading {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.row {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+
+flex-flow:wrap ;
+}
+
+.card {
+    width: 30%; 
+    background: #FFF;
+    border: 1px solid #ccc;
+    margin-bottom:50px;
+    transition: 0.3s;
+    bottom: -100px;
+}
+
+.card-header {
+    text-align: center;
+    padding: 50px 10px;
+    background: #00afef;
+}
+
+.card-body {
+    padding: 30px 20px;
+    text-align:center ;
+    font-size: 18px;
+    background-color:#00afef ;
+    color: white;
+}
+
+.card-body .btn{
+    display: block;
+    color: #FFF;
+    text-align: center;
+    background: #00afef;
+    margin-top: 30px;
+    text-decoration: none;
+    padding: 10px 5px;
+
+}
+
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px blue;
+}
+
+@media screen and (max-width:100px) {
+    .card {
+            width: 40%;
+    }
+}
+
+@media screen and (max-width:620px) {
+    .container {
+        width: 100%;
+    }
+
+    .heading {
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    .card {
+            width: 80%;
+    }
+}
+
+ h2 {
+    align-items: center;
+    color: black;
+    margin: auto;
+    max-width: 500px;
+    font-weight: bold;
+    font-size: 56px;
+    text-align: center;
+    top: -100px
+}
+h1 {
+    align-items: center;
+    color: white;
+    margin: auto;
+    max-width: 500px;
+    
+}
+

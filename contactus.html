@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">  
+
+    <head>
+        <meta charset="utf-8">
+        <title>Contact Us</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0", minimum scale="1", maximum-scale="1" user-scalable="no">
+       <title>CSS respinsive contact form with google map</title>
+        <link rel="stylesheet" href="contactus.css">
+         
+        
+        
+    </head>
+    <body>
+        <!-- navigation bar-->
+        <nav>
+            <input type="checkbox" id="check">
+            <label for ="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo"> <a href="CCapstone.html">Capstone<span>Cloud</span></a></label>
+            <ul>
+                <li><a href="CCapstone.html"> Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="storage.html">Storage</a></li>
+                <li><a href="webhosting.html">Web Hosting</a></li>
+                <li><a href="bespoke.html">Bespoke Packages</a></li>
+                <li><a class="active" href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <!-- CONTACT US INFORMATION-->
+
+        <h3>
+            CONTACT US
+        </h3>
+        <div id="error"></div>
+        <div class="contact-wrap">
+			<div class="contact-in">
+				<h1>Contact Info</h1>
+				<h2> <a href="tel:+44 161 686 5770">Phone</a></h2>
+				<p><a href="tel:+44 161 686 5770">0161-686-5770</a></p>
+				<h2> <a href="mailto:skillscity@hostsalford.com" target="blank">Email</a></h2>
+				<p><a href="mailto:skillscity@hostsalford.com" target="blank">skillscity@hostsalford.com </a></p>
+				<h2> Address</h2>
+				<p>Blue Tower, MediaCity UK, Salford, England, M50 2ST
+                </p>
+				
+			</div>
+			<div class="contact-in">
+				<h1>Send us a Message</h1>
+				<form>
+					<input type="text" placeholder="Full Name" class="contact-in-input">
+					<input type="text" placeholder="Email" class="contact-in-input">
+					<input type="text" placeholder="Subject" class="contact-in-input">
+					<textarea placeholder="Message" class="contact-in-textarea"></textarea>
+					<input onclick="alert ('Message received our team will contact you shortly!')" type="button" value="SUBMIT" class="contact-in-btn" > 
+				</form>
+			</div>
+			<div class="contact-in">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2374.7716010892464!2d-2.30109688415679!3d53.47254188000571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487ba9373905dab3%3A0x48284e891e591543!2sMediaCityUK%20Manchester!5e0!3m2!1sen!2suk!4v1645664168241!5m2!1sen!2suk" width="600" height="450" style="border:0; " allowfullscreen="" loading="lazy"></iframe>
+			</div>
+           <script src="script.js"></script>
+            <button onclick="revealMessage()"> New Users Receive 10 % Off Their First Purchase!</button>
+            <p id="hiddenMessage" style="display:none"> CAPCLOUD10</p>
+		</div>
+    </body>
+    </html>
+
+
